@@ -1,0 +1,48 @@
+.movieCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 12px;
+  padding: 1rem;
+  background-color: #3a3f5c;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(104, 104, 104, 0.3);
+  transition: transform 0.2s ease;
+  font-family: "Playfair Display", serif;
+}
+
+.movieCard:hover {
+  transform: scale(1.03);
+}
+
+.title {
+ margin-top: 0.5rem;
+  font-size: 1rem;
+  text-align: center;
+  color: #f8f9fa;
+  min-height: 2.5em;
+  overflow: hidden;
+}
+
+.posterWrapper{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.moviePoster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.releaseDate {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.overview{
+    margin-top: 10px;
+}

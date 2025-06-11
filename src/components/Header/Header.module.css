@@ -1,0 +1,22 @@
+.appHeader {
+  background-color: #1a1a1a; /* deep dark gray */
+  color: #f8f9fa;            /* soft white */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+  position: relative;
+  top: 0;
+  border-bottom: 2px solid #adb5db;
+  font-family: 'Playfair Display', serif;
+  
+}
+
+.appLogo{
+  display: flex;
+  align-items: center;
+  font-size: 1.7rem;
+  gap: 0.5rem;
+  color: #adb5db;
+}

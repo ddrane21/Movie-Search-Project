@@ -1,0 +1,24 @@
+.movieGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.listHeader{
+    display: flex;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.nextButton{
+    background-color: #3a3f5c;
+    padding: 0.5rem;
+    color: #ffffff;
+    margin: 1.6rem;
+    font-family: "Playfair Display", serif;
+    
+}
