@@ -1,0 +1,16 @@
+.navList{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #adb5db;
+    
+}
+
+.navLink {
+    color: #1a1a1a; /* deep dark gray */
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border-right: #adb5db 2px solid;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}

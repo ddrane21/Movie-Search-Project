@@ -1,5 +1,6 @@
 import styles from "./MovieCard.module.css";
 
+
 export default function MovieCard({ movie }) {
   return (
     <>
@@ -8,11 +9,11 @@ export default function MovieCard({ movie }) {
           <h1 className={styles.title}>{movie.title}</h1>
         </div>
         <div className={styles.posterWrapper}>
-        <img
-          className={styles.moviePoster}
-          src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-          alt={movie.title}
-        />
+          <img
+            className={styles.moviePoster}
+            src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+            alt={movie.title}
+          />
         </div>
         <div className={styles.releaseDate}>
           <div>{movie.release_date}</div>

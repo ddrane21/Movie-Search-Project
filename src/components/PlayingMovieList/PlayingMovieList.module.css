@@ -1,0 +1,42 @@
+.playingListContainer {
+  padding: 2rem;
+  background-color: #0f0f0f;
+  border-radius: 16px;
+  box-shadow: 0 0 20px #737994;
+  margin: 2rem auto;
+  max-width: 1200px;
+  color: white;
+}
+
+.listHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #adb5db;
+  padding-bottom: 0.5rem;
+  color: #adb5db;
+}
+
+.playingMovieGrid {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 1.5rem;
+  padding-bottom: 1rem;
+  scroll-snap-type: x mandatory;
+}
+
+.playingMovieGrid::-webkit-scrollbar {
+  height: 8px;
+}
+
+.playingMovieGrid::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+}
+
+.playingMovieGrid::-webkit-scrollbar-track {
+  background: #222;
+}

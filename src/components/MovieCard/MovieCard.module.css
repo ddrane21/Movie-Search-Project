@@ -9,6 +9,7 @@
   box-shadow: 0 4px 12px rgba(104, 104, 104, 0.3);
   transition: transform 0.2s ease;
   font-family: "Playfair Display", serif;
+  
 }
 
 .movieCard:hover {
@@ -41,6 +42,7 @@
   display: flex;
   justify-content: center;
   margin-top: 10px;
+  font-weight: bold;
 }
 
 .overview{

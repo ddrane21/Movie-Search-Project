@@ -12,6 +12,7 @@
     display: flex;
     justify-content: center;
     font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
 }
 
 .nextButton{

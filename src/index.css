@@ -7,4 +7,13 @@ body {
   color: #f8f9fa;
 }
 
+nav a{
+  color : #1a1a1a; 
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: #1a1a1a;
+}
+
 

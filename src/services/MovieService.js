@@ -1,5 +1,7 @@
 import tmdb from "./tmdb";
 
+
+
 export async function getPopularMovies(){
     try {
         const response = await tmdb.get('/movie/popular');
@@ -18,10 +20,35 @@ export async function getMoreMovies(page) {
                 page: page,
             },
         });
-        return response
+        return response;
     }catch (error){
         console.error("Failed to fetch more movies:", error);
         return { data: { results: [] } };
     }
    
+}
+
+export async function SearchMovie(query){
+
+    try{
+        const response = await tmdb.get("/search/movie", {
+            params: {
+                query: query, 
+            },
+        });
+        return response.data.results;
+    }catch (error){
+        console.error("Failed to find the movie", error);
+        return [];
+    }
+}
+
+export async function getPlayingMovies() {
+    try {
+        const response = await tmdb.get('/movie/now_playing');
+        return response.data.results;
+    } catch (error) {
+        console.error("Error fetching currently playing movies", error);
+        return [];
+    }
 }
