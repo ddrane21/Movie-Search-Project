@@ -45,6 +45,19 @@
   font-weight: bold;
 }
 
-.overview{
-    margin-top: 10px;
+.detailButton{
+  background: transparent;
+  border: 2px solid #adb5db;
+  color: #adb5db;
+  padding: 0.5rem 1.25rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 3rem;
+  margin-left: 3rem;
+}
+
+.detailButton:hover {
+  background-color: #adb5db;
+  color: #1a1a1a;
 }

@@ -1,6 +1,15 @@
 import tmdb from "./tmdb";
 
 
+export async function getMovieById(id) {
+    try {
+        const response = await tmdb.get(`/movie/${id}`);
+        return response.data;
+    } catch (error) {
+        console.error("Error fetching movie", error);
+        return null;
+    }
+}
 
 export async function getPopularMovies(){
     try {

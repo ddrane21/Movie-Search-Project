@@ -1,4 +1,5 @@
 import styles from "./MovieCard.module.css";
+import { Link } from "react-router-dom";
 
 
 export default function MovieCard({ movie }) {
@@ -18,9 +19,16 @@ export default function MovieCard({ movie }) {
         <div className={styles.releaseDate}>
           <div>{movie.release_date}</div>
         </div>
-        <div className={styles.overview}>
-          <div>{movie.overview}</div>
-        </div>
+        
+        <footer>
+          <div id={styles.detailLink}>
+            <Link to={`/popular/${movie.id}`}>
+            <button className={styles.detailButton}>
+              View Details
+            </button>
+            </Link>
+          </div>
+        </footer>
       </article>
     </>
   );
