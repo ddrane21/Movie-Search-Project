@@ -1,0 +1,83 @@
+.heroBanner {
+  
+  height: 450px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  border-radius: 16px;
+  margin: 45px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.6);
+}
+.heroBanner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.heroBanner > * {
+  position: relative;
+  z-index: 2;
+}
+.heroBanner .title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+
+}
+
+.heroBanner .description {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: #ccc;
+}
+.trailerContainer {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+
+.trailerContainer button{
+    background: transparent;
+    border: 2px solid #adb5db;
+    color: #adb5db;
+    padding: 0.5rem 1.25rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: "Playfair Display", serif;
+    
+}
+
+.trailerContainer button:hover {
+  background-color: #adb5db;
+  color: #1a1a1a;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detailButton {
+    background: transparent;
+    border: 2px solid #adb5db;
+    color: #adb5db;
+    padding: 0.5rem 1.25rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.detailButton:hover {
+    background-color: #adb5db;
+    color: #1a1a1a;
+}

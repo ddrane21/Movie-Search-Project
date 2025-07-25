@@ -5,6 +5,11 @@ export default function MainNav() {
   return (
     <nav id="main-nav" className={styles.navList}>
       <div className={styles.navLink}>
+        <NavLink to="/">
+          Home
+        </NavLink>
+        </div>
+      <div className={styles.navLink}>
         <NavLink to="/popular">Popular Movies</NavLink>
       </div>
       <div className={styles.navLink}>

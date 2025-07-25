@@ -61,3 +61,23 @@ export async function getPlayingMovies() {
         return [];
     }
 }
+
+export async function getTrendMovieToday() {
+    try {
+        const response = await tmdb.get('/trending/movie/day');
+        return response.data.results;
+    } catch (error) {
+        console.error("Error fetching trending movies", error);
+        return [];
+    }
+}
+
+export async function getMovieTrailer(id) {
+    try {
+        const response = await tmdb.get(`/movie/${id}/videos`);
+        return response.data.results;
+    } catch (error) {
+        console.error("Error fetching movie trailer", error);
+        return [];
+    }
+}
